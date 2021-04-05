@@ -40,7 +40,7 @@ quais regiões deveriam ser priorizadas para vacinação e quais
 deveriam ser os critérios para determinar qual porção da polulação
 deve ser vacinada primeiro de modo a minimizar os efeitos dessas crises?
 
-* 
+* De acordo com as taxas de letalidade e parâmetros multidimensionais correlacionados ao COVID 19, quais regiões e público-alvo deveriam ser priorizados na campanha de vacinação visando minimizar o efeito da crise sanitária e econômica. 
 
 # Bases de Dados
 > Brainstrom -> Dados necessários:
