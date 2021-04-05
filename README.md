@@ -35,12 +35,7 @@ por esse contexto.
 
 # Perguntas de Pesquisa
 
-* Dadas as crises econômicas regionais (quais?) causadas pela pandemia,
-quais regiões deveriam ser priorizadas para vacinação e quais
-deveriam ser os critérios para determinar qual porção da polulação
-deve ser vacinada primeiro de modo a minimizar os efeitos dessas crises?
-
-* De acordo com as taxas de letalidade e parâmetros multidimensionais correlacionados ao COVID 19, quais regiões e público-alvo deveriam ser priorizados na campanha de vacinação visando minimizar o efeito da crise sanitária e econômica. 
+*De acordo com as taxas de mortalidade e parâmetros multidimensionais correlacionados ao COVID 19, quais regiões e público-alvo deveriam ser priorizados na campanha de vacinação visando minimizar o efeito da crise sanitária e econômica. 
 
 # Bases de Dados
 > Brainstrom -> Dados necessários:
@@ -52,6 +47,7 @@ deve ser vacinada primeiro de modo a minimizar os efeitos dessas crises?
 > * número de trabalhadores informais/informais (IBGE)
 > * porcentagem atual de vacinados?
 > * contexto sociodemográfico regional(IBGE)
+> * temporalidade dos dados()
 
 > links referência: 
 > * [kaggle_covid_dataset])(https://www.kaggle.com/unanimad/corona-virus-brazil/code)
