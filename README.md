@@ -46,10 +46,12 @@ deve ser vacinada primeiro de modo a minimizar os efeitos dessas crises?
 > Brainstrom -> Dados necessários:
 > * informações de mortalidade de covid ()
 > * taxa de ocupação de uti ()
+> demandas de leitos de enfermaria e uti()
 > * disponibilidade de profissionais da área da saúde ()
 > * idade média da população(IBGE)
-> * número de trabalhadores informais (IBGE)
+> * número de trabalhadores informais/informais (IBGE)
 > * porcentagem atual de vacinados?
+> * contexto sociodemográfico regional(IBGE)
 
 > links referência: 
 > * [kaggle_covid_dataset])(https://www.kaggle.com/unanimad/corona-virus-brazil/code)
