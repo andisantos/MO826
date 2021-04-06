@@ -2,10 +2,8 @@
 
 ```
 |__ README.md                                           <- apresentação do projeto
-│
-├── data                                                <- base de dados
-│   |__ NDA                                             
-│
+│__ README_datasets.md                                  <- informações referentes aos dados utilizados no projeto
+|
 ├── notebooks                                           <- Jupyter notebooks
 │   |__ NDA
 |
@@ -37,7 +35,7 @@ por esse contexto.
 
 # Perguntas de Pesquisa
 
-*De acordo com as taxas de mortalidade e parâmetros multidimensionais correlacionados ao COVID 19, quais regiões e público-alvo deveriam ser priorizados na campanha de vacinação visando minimizar o efeito da crise sanitária e econômica. 
+* De acordo com as taxas de mortalidade e parâmetros multidimensionais correlacionados ao COVID 19, quais regiões e público-alvo deveriam ser priorizados na campanha de vacinação visando minimizar o efeito da crise sanitária e econômica.
 
 # Bases de Dados
 > Brainstrom -> Dados necessários:
