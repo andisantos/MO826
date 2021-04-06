@@ -33,6 +33,8 @@ múltiplas estratégias distintas de vacinação da população de modo
 que seja possível reduzir os efeitos das crises regionais causadas
 por esse contexto.
 
+//(rascunho) O projeto visa identificar as peculiaridades que envolvem a taxa de mortalidade devido a crise da Covid-19 no Brasil, assim como abranger de forma mais específica às estratégias da campanha de vacinação, propondo através dos dados uma melhor análise que busque minimizar o efeito da crise através da vacinação do público-alvo. 
+
 # Perguntas de Pesquisa
 
 *De acordo com as taxas de mortalidade e parâmetros multidimensionais correlacionados ao COVID 19, quais regiões e público-alvo deveriam ser priorizados na campanha de vacinação visando minimizar o efeito da crise sanitária e econômica. 
