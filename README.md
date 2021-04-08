@@ -1,13 +1,13 @@
 # Estrutura de Aqruivos e Pastas
 
 ```
-|__ README.md                                           <- apresentação do projeto
-│__ README_datasets.md                                  <- informações referentes aos dados utilizados no projeto
+|__ README.md                        <- apresentação do projeto
+│__ README_datasets.md               <- informações referentes aos dados utilizados no projeto
 |
-├── notebooks                                           <- Jupyter notebooks
+├── notebooks                        <- Jupyter notebooks
 │   |__ NDA
 |
-└── media                                               <- mídias usadas e/ou produzidas no projeto
+└── media                            <- mídias usadas e/ou produzidas no projeto
     |__NDA
 ```
 
@@ -21,6 +21,7 @@
 | Andreza Aparecida dos Santos | 164213  | Computação |
 | Leonardo Marçal  | 225240 | Computação |
 | Lígia Vasconcellos  | 081938 | Estatística |
+| Lucas de Oliveira Fujii | 235599 | Saúde |
 | Mariana Amaral Raposo  | 262866 | Saúde |
 
 # Descrição Resumida do Projeto
@@ -49,13 +50,14 @@ por esse contexto.
 > * contexto sociodemográfico regional(IBGE)
 > * temporalidade dos dados()
 
-> links referência: 
+> links referência:
 > * [kaggle_covid_dataset])(https://www.kaggle.com/unanimad/corona-virus-brazil/code)
 > * [covid_saude_gov](https://covid.saude.gov.br/)
 > * [comitecientifico-ne](https://www.comitecientifico-ne.com.br/c4ne/o-c4ne)
 > * [Observatório_covid19](https://portal.fiocruz.br/observatorio-covid-19)
 > * [Agencia IBGE](https://agenciadenoticias.ibge.gov.br/agencia-detalhe-de-midia.html?view=mediaibge&catid=2103&id=3702)
 > * [OpenDataSUS](https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar/resource/f9391f7c-9775-4fac-a3ce-bf384e2674c2?view_id=04f2877a-2ea0-4b59-b630-5c530d8db3f2)
+> * [Our World in Data](https://ourworldindata.org/coronavirus-data)
 
 
 # Metodologia
