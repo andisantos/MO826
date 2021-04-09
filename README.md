@@ -26,23 +26,26 @@
 
 # Descrição Resumida do Projeto
 
-O projeto tem como intuito identificar se existem peculiaridades
-inerentes a cada região do Brasil que torne necessária a existência de
-múltiplas estratégias distintas de vacinação da população de modo
-que seja possível reduzir os efeitos das crises regionais causadas
-por esse contexto.
+O coronavírus 2019 (COVID-19) é causado por um novo coronavírus conhecido como síndrome respiratória aguda grave coronavírus 2 (SARS-CoV-2). A rápida disseminação desse patógeno e o número crescente de casos e óbitos têm levado vários países ao colapso sanitário, hospitalar e econômico.
+O Brasil viveu em março de 2021 o mês mais mortal da pandemia de COVID-19, com 66 mil óbitos registrados e a saturação dos sistemas de saúde públicos e privados. O que destaca a necessidade urgente de medidas efetivas de controle da doença como forma de evitar o avanço descontrolado e a incidência de novos picos.
 
-//(rascunho) O projeto visa identificar as peculiaridades que envolvem a taxa de mortalidade devido a crise da Covid-19 no Brasil, assim como abranger de forma mais específica às estratégias da campanha de vacinação, propondo através dos dados uma melhor análise que busque minimizar o efeito da crise através da vacinação do público-alvo. 
+
+Estudos de eficácia (ESTUDOS DE EFICÁCIA FIO CRUZ/ANVISA?) confirmam o impacto que a vacinação em massa da população pode trazer na queda nos índices de mortalidade da doença e, consequentemente, reduzindo as taxas de ocupação dos hospitais, enfatizando sua importância. Entretanto, por ser um país de dimensões continentais, cada dia verificamos mais desafios na produção e acesso total da população à vacinação.
+Neste sentido e considerando a necessidade iminente de medidas efetivas de minimização da crise sanitária e econômica atual, o presente projeto tem o intuito de analisar parâmetros multidimensionais relacionados ao COVID-19 em cada região do Brasil, buscando por relações nos dados que possam ser capazes de fornecer uma melhor análise estatística das regiões e levantar possíveis planos de vacinação que impactem mais rapidamente no controle da pandemia.
+
+
+O poder da vacinação em grupos e regiões prioritárias que mais são afetadas pelas crises sanitárias e econômicas poderão auxiliar na redução da taxa de mortalidade e no equilíbrio do sistema de saúde.
+
 
 # Perguntas de Pesquisa
 
-* De acordo com as taxas de mortalidade e parâmetros multidimensionais correlacionados ao COVID 19, quais regiões e público-alvo deveriam ser priorizados na campanha de vacinação visando minimizar o efeito da crise sanitária e econômica.
+* De acordo com as taxas de mortalidade e parâmetros multidimensionais correlacionados ao COVID-19, quais regiões e públicos-alvo deveriam ser priorizados na campanha de vacinação visando minimizar o efeito da crise sanitária e econômica.
 
 # Bases de Dados
 > Brainstrom -> Dados necessários:
 > * informações de mortalidade de covid ()
 > * taxa de ocupação de uti ()
-> demandas de leitos de enfermaria e uti()
+> * demandas de leitos de enfermaria e uti()
 > * disponibilidade de profissionais da área da saúde ()
 > * idade média da população(IBGE)
 > * número de trabalhadores informais/informais (IBGE)
@@ -58,7 +61,6 @@ por esse contexto.
 > * [Agencia IBGE](https://agenciadenoticias.ibge.gov.br/agencia-detalhe-de-midia.html?view=mediaibge&catid=2103&id=3702)
 > * [OpenDataSUS](https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar/resource/f9391f7c-9775-4fac-a3ce-bf384e2674c2?view_id=04f2877a-2ea0-4b59-b630-5c530d8db3f2)
 > * [Our World in Data](https://ourworldindata.org/coronavirus-data)
-
 
 # Metodologia
 > Proposta de metodologia incluindo especificação de quais técnicas pretende-se explorar, tais como: aprendizagem de máquina, análise de redes, análise estatística, ou integração de uma ou mais técnicas.
