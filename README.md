@@ -61,6 +61,7 @@ O poder da vacinação em grupos e regiões prioritárias que mais são afetadas
 > * [Agencia IBGE](https://agenciadenoticias.ibge.gov.br/agencia-detalhe-de-midia.html?view=mediaibge&catid=2103&id=3702)
 > * [OpenDataSUS](https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar/resource/f9391f7c-9775-4fac-a3ce-bf384e2674c2?view_id=04f2877a-2ea0-4b59-b630-5c530d8db3f2)
 > * [Our World in Data](https://ourworldindata.org/coronavirus-data)
+> * [IBGE] (https://www.ibge.gov.br/estatisticas/downloads-estatisticas.html)
 
 # Metodologia
 > Proposta de metodologia incluindo especificação de quais técnicas pretende-se explorar, tais como: aprendizagem de máquina, análise de redes, análise estatística, ou integração de uma ou mais técnicas.
