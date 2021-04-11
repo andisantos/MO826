@@ -30,28 +30,31 @@ O coronavírus 2019 (COVID-19) é causado por um novo coronavírus conhecido com
 O Brasil viveu em março de 2021 o mês mais mortal da pandemia de COVID-19, com 66 mil óbitos registrados e a saturação dos sistemas de saúde públicos e privados. O que destaca a necessidade urgente de medidas efetivas de controle da doença como forma de evitar o avanço descontrolado e a incidência de novos picos.
 
 
-Estudos de eficácia (ESTUDOS DE EFICÁCIA FIO CRUZ/ANVISA?) confirmam o impacto que a vacinação em massa da população pode trazer na queda nos índices de mortalidade da doença e, consequentemente, reduzindo as taxas de ocupação dos hospitais, enfatizando sua importância. Entretanto, por ser um país de dimensões continentais, cada dia verificamos mais desafios na produção e acesso total da população à vacinação.
+Estudos de eficácia (REFERENCIA - estudos de eficacia das vacinas) confirmam o impacto que elas teriam caso aplicadas em massa na população,
+trazendo uma queda nos índices de mortalidade da doença e, consequentemente, reduzindo as taxas de ocupação dos hospitais, enfatizando sua importância. Entretanto, por ser um país de dimensões continentais, cada dia verificamos mais desafios na produção e acesso total da população à vacinação.
 Neste sentido e considerando a necessidade iminente de medidas efetivas de minimização da crise sanitária e econômica atual, o presente projeto tem o intuito de analisar parâmetros multidimensionais relacionados ao COVID-19 em cada região do Brasil, buscando por relações nos dados que possam ser capazes de fornecer uma melhor análise estatística das regiões e levantar possíveis planos de vacinação que impactem mais rapidamente no controle da pandemia.
-
 
 O poder da vacinação em grupos e regiões prioritárias que mais são afetadas pelas crises sanitárias e econômicas poderão auxiliar na redução da taxa de mortalidade e no equilíbrio do sistema de saúde.
 
 
 # Perguntas de Pesquisa
 
-* De acordo com as taxas de mortalidade e parâmetros multidimensionais correlacionados ao COVID-19, quais regiões e públicos-alvo deveriam ser priorizados na campanha de vacinação visando minimizar o efeito da crise sanitária e econômica.
+* De acordo com as taxas de mortalidade e parâmetros multidimensionais correlacionados ao COVID-19, quais regiões e públicos-alvo deveriam ser priorizados na campanha de vacinação visando minimizar o efeito da crise sanitária e econômica?
 
 # Bases de Dados
+
 > Brainstrom -> Dados necessários:
-> * informações de mortalidade de covid ()
-> * taxa de ocupação de uti ()
+> * informações de mortalidade de covid-19
+> * taxa de ocupação de uti
 > * demandas de leitos de enfermaria e uti()
 > * disponibilidade de profissionais da área da saúde ()
-> * idade média da população(IBGE)
 > * número de trabalhadores informais/informais (IBGE)
+> * idade média da população(IBGE)
+
 > * porcentagem atual de vacinados?
 > * contexto sociodemográfico regional(IBGE)
 > * temporalidade dos dados()
+> * distribuicao de idade da populacao
 
 > links referência:
 > * [kaggle_covid_dataset])(https://www.kaggle.com/unanimad/corona-virus-brazil/code)
@@ -74,4 +77,4 @@ Através desta base, serão aplicados múltiplas técnicas de algoritmos supervi
 
 
 # Cronograma
-> ![Cronograma de entregas](Imagens/Cronograma.PNG)
+![Cronograma de entregas](imagens/cronograma_v2.png)
