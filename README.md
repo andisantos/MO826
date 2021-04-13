@@ -11,7 +11,7 @@
     |__NDA
 ```
 
-# Projeto `Analisando parâmetros multidimensionais: como direcionar o foco na vacinação prioritária de populações-chave
+# Projeto `Analisando parâmetros multidimensionais: como direcionar o foco na vacinação prioritária de populações-chave`
 `
 # Project `Multi Dimensional parameters analises: how to direct the focus on priority vaccination of key-population`
 
@@ -56,7 +56,7 @@ A princípio pretendemos utilizar bases de dados públicas e abertas, buscando d
 Algumas bases de interesse já foram encontradas e estão sendo analisadas, como as abaixo:
 
 * [covid_saude_gov](https://covid.saude.gov.br/)
-* [kaggle_covid_dataset])(https://www.kaggle.com/unanimad/corona-virus-brazil/code)
+* [kaggle_covid_dataset](https://www.kaggle.com/unanimad/corona-virus-brazil/code)
 * [OpenDataSUS](https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar/resource/f9391f7c-9775-4fac-a3ce-bf384e2674c2?view_id=04f2877a-2ea0-4b59-b630-5c530d8db3f2)
 * [IBGE](https://www.ibge.gov.br/estatisticas/downloads-estatisticas.html)
 * [Agencia IBGE](https://agenciadenoticias.ibge.gov.br/agencia-detalhe-de-midia.html?view=mediaibge&catid=2103&id=3702)
