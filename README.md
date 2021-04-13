@@ -8,8 +8,8 @@
 │   |__ NDA
 |
 └── media                            <- mídias usadas e/ou produzidas no projeto
-    |                                <- vídeo de apresentação de projeto
-    |__NDA
+    |__ pitch.mov                    <- vídeo de apresentação inicial do projeto
+    |__ cronograma_v2.png            <- cronograma inicial do projeto
 ```
 
 # Projeto `Analisando parâmetros multidimensionais: como direcionar o foco na vacinação prioritária de populações-chave`
@@ -79,7 +79,7 @@ Com base na visão atual do grupo sobre o projeto, acreditamos que as ferramenta
 
 
 # Cronograma
-![Cronograma de entregas](imagens/cronograma_v2.png)
+![Cronograma de entregas](media/cronograma_v2.png)
 
 # Referências
 
