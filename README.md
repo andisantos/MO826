@@ -8,6 +8,7 @@
 │   |__ NDA
 |
 └── media                            <- mídias usadas e/ou produzidas no projeto
+    |                                <- vídeo de apresentação de projeto
     |__NDA
 ```
 
