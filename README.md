@@ -38,7 +38,7 @@ O poder da vacinação em grupos e regiões prioritárias que mais são afetadas
 
 # Perguntas de Pesquisa
 
-* De acordo com as taxas de letalidade e parâmetros multidimensionais correlacionados ao COVID-19, quais regiões e públicos-alvo deveriam ser priorizados na campanha de vacinação visando minimizar o efeito da crise sanitária e econômica?
+* De acordo com parâmetros multidimensionais correlacionados ao COVID-19, quais regiões e públicos-alvo deveriam ser priorizados na campanha de vacinação visando minimizar o efeito da crise sanitária e econômica?
 
 # Bases de Dados
 
