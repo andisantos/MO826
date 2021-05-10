@@ -5,8 +5,7 @@
 │__ README_datasets.md               <- informações referentes aos dados utilizados no projeto
 |
 ├── notebooks                        <- Jupyter notebooks
-│   |__ NDA
-|
+│   |__centralizando_bases.ipynb
 └── media                            <- mídias usadas e/ou produzidas no projeto
     |__ pitch.mov                    <- vídeo de apresentação inicial do projeto
     |__ cronograma_v2.png            <- cronograma inicial do projeto
