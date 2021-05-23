@@ -58,46 +58,42 @@ Através desta base, serão aplicados múltiplas técnicas de algoritmos supervi
 
 | Base de Dados  | Endereço na Web | Resumo descritivo |
 | :---: | :-: | :-----------: |
-| 1. OWID Coronavirus-data | https://github.com/owid/covid-19-data/tree/master/public/data  | Resumo base |
+| 1. OWID Coronavirus-data | https://github.com/owid/covid-19-data/tree/master/public/data  | Base com informações sobre o avanço da doença COVID-19 por país. |
 | 2. Coronavirus (COVID-19) - Brazil Dataset | https://www.kaggle.com/unanimad/corona-virus-brazil | Resumo base |
 
 #### 1. OWID Coronavirus-data
 
-#### 2. OWID Coronavirus-data
+A base apresenta as seguintes variáveis:
+
+> iso_code, continent, location, date, weekly_hosp_admissions_per_million, new_cases, new_cases_smoothed, total_deaths, new_deaths, new_deaths_smoothed, total_cases_per_million, new_cases_per_million, new_cases_smoothed_per_million, total_deaths_per_million, new_deaths_per_million, new_deaths_smoothed_per_million,reproduction_rate,icu_patients, icu_patients_per_million, hosp_patients, hosp_patients_per_million, weekly_icu_admissions, weekly_icu_admissions_per_million, weekly_hosp_admissions, total_cases, new_tests, total_tests, total_tests_per_thousand, new_tests_per_thousand, new_tests_smoothed, new_tests_smoothed_per_thousand, positive_rate, tests_per_case, tests_units, total_vaccinations, people_vaccinated, people_fully_vaccinated, new_vaccinations, new_vaccinations_smoothed, people_vaccinated_per_hundred,people_fully_vaccinated_per_hundred, new_vaccinations_smoothed_per_million, stringency_index, population, population_density,  median_age, aged_65_older, aged_70_older, gdp_per_capita, extreme_poverty, cardiovasc_death_rate, diabetes_prevalence, female_smokers, male_smokers, handwashing_facilities, hospital_beds_per_thousand, life_expectancy, human_development_index
+
+Essa base possui bastante informação relevante para o estudo proposto, entretanto as informações estão a nível de continente, ou seja, cada variável representa o somatório correspondente a território nacional. Como o objetivo dessa etapa do projeto é encontrar variáveis que possam ser utilizadas em algoritmos supervisionados para tentar determinar perfis de indivíduos que deveriam ser priorizados na atual etapa de vacinação contra COVID-19, concluiu-se que esta base a nível nacional não seria utilizada para os fins desse projeto.
+
+#### 2. Coronavirus (COVID-19) - Brazil Dataset
+
+
 
 
 ### Bases Estudadas e Adotadas
 
 | Base de Dados  | Endereço na Web | Resumo descritivo |
 | :---: | :-: | :-----------: |
-| Covid Saude Gov | https://covid.saude.gov.br/  | Resumo base |
-| Registro de Ocupação Hospitalar COVID-19  | https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar/resource/f9391f7c-9775-4fac-a3ce-bf384e2674c2?view_id=04f2877a-2ea0-4b59-b630-5c530d8db3f2 | Resumo base |
-| Tabelas por municípios - UTI, respiradores, médicos e enfermeiros | https://agenciadenoticias.ibge.gov.br/agencia-detalhe-de-midia.html?view=mediaibge&catid=2103&id=3702 | Resumo base |
-| PIB  |   | Resumo base |
-| Trabalho informal  |   | Resumo base |
+| 1. Covid Saude Gov | https://covid.saude.gov.br/  | Resumo base |
+| 2. Registro de Ocupação Hospitalar COVID-19  | https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar/resource/f9391f7c-9775-4fac-a3ce-bf384e2674c2?view_id=04f2877a-2ea0-4b59-b630-5c530d8db3f2 | Resumo base |
+| 3. Tabelas por municípios - UTI, respiradores, médicos e enfermeiros | https://agenciadenoticias.ibge.gov.br/agencia-detalhe-de-midia.html?view=mediaibge&catid=2103&id=3702 | Resumo base |
+| 4. PIB  |   | Resumo base |
+| 5. Trabalho informal  |   | Resumo base |
 
-
-A princípio pretendemos utilizar bases de dados públicas e abertas, buscando diversas variáveis como:
-
-* informações de mortalidade e de letalidade da covid-19
-* taxa de ocupação de uti por região
-* demandas de leitos de enfermaria e uti
-* disponibilidade de profissionais da área da saúde
-* idade média da população por região
-* porcentagem atual de vacinados por região
-* contexto sociodemográfico regional
-* número de trabalhadores informais
 
 Algumas bases de interesse já foram encontradas e estão sendo analisadas, como as abaixo:
 
 * [covid_saude_gov](https://covid.saude.gov.br/)
-* [kaggle_covid_dataset](https://www.kaggle.com/unanimad/corona-virus-brazil/code)
 * [OpenDataSUS](https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar/resource/f9391f7c-9775-4fac-a3ce-bf384e2674c2?view_id=04f2877a-2ea0-4b59-b630-5c530d8db3f2)
 * [IBGE](https://www.ibge.gov.br/estatisticas/downloads-estatisticas.html)
 * [Agencia IBGE](https://agenciadenoticias.ibge.gov.br/agencia-detalhe-de-midia.html?view=mediaibge&catid=2103&id=3702)
 * [comitecientifico-ne](https://www.comitecientifico-ne.com.br/c4ne/o-c4ne)
 * [Observatório_covid19](https://portal.fiocruz.br/observatorio-covid-19)
-* [Our World in Data](https://ourworldindata.org/coronavirus-data)
+
 
 
 # Ferramentas
