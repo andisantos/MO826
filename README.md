@@ -54,25 +54,32 @@ Através desta base, serão aplicados múltiplas técnicas de algoritmos supervi
 
 ## Bases de Dados e Evolução
 
+Com o objetivo de obter uma base com variáveis que permitam a resposta da pergunta principal do projeto, concluiu-se que seria necessária que esta base tenha informações a nível de indivíduo. Isso quer dizer que, para cada indivíduo infectado, precisamos obter informações relavantes quanto ao seus estado de saúde como resultados de exames de sangue e outros exames efetuados, mas também informações macro sobre a região e contexto social as quais estaria inserido. Tendo em mãos estas informações, teoricamente pode-se testar técnicas de clusterização dos indivíduos com características comuns para que depois essas informações sejam utilizadas por algoritmos supervisionados com o objetivo de determinar quais conjuntos de características correspondem a maiores taxas de letalidade dentre os infectados por COVID-19.
+
 ### Bases Estudadas mas Não Adotadas
 
 | Base de Dados  | Endereço na Web | Resumo descritivo |
 | :---: | :-: | :-----------: |
-| 1. OWID Coronavirus-data | https://github.com/owid/covid-19-data/tree/master/public/data  | Base com informações sobre o avanço da doença COVID-19 por país. |
-| 2. Coronavirus (COVID-19) - Brazil Dataset | https://www.kaggle.com/unanimad/corona-virus-brazil | Resumo base |
+| 1. OWID Coronavirus-data | https://github.com/owid/covid-19-data/tree/master/public/data  | Base com informações sobre o avanço da doença COVID-19 a nível de  país. |
+| 2. Coronavirus (COVID-19) - Brazil Dataset | https://www.kaggle.com/unanimad/corona-virus-brazil | Base com informações sobre o avanço da doença COVID-19 a nível de país, estado e cidade.  |
 
 #### 1. OWID Coronavirus-data
 
 A base apresenta as seguintes variáveis:
 
-> iso_code, continent, location, date, weekly_hosp_admissions_per_million, new_cases, new_cases_smoothed, total_deaths, new_deaths, new_deaths_smoothed, total_cases_per_million, new_cases_per_million, new_cases_smoothed_per_million, total_deaths_per_million, new_deaths_per_million, new_deaths_smoothed_per_million,reproduction_rate,icu_patients, icu_patients_per_million, hosp_patients, hosp_patients_per_million, weekly_icu_admissions, weekly_icu_admissions_per_million, weekly_hosp_admissions, total_cases, new_tests, total_tests, total_tests_per_thousand, new_tests_per_thousand, new_tests_smoothed, new_tests_smoothed_per_thousand, positive_rate, tests_per_case, tests_units, total_vaccinations, people_vaccinated, people_fully_vaccinated, new_vaccinations, new_vaccinations_smoothed, people_vaccinated_per_hundred,people_fully_vaccinated_per_hundred, new_vaccinations_smoothed_per_million, stringency_index, population, population_density,  median_age, aged_65_older, aged_70_older, gdp_per_capita, extreme_poverty, cardiovasc_death_rate, diabetes_prevalence, female_smokers, male_smokers, handwashing_facilities, hospital_beds_per_thousand, life_expectancy, human_development_index
+> iso_code, continent, location, date, weekly_hosp_admissions_per_million, new_cases, new_cases_smoothed, total_deaths, new_deaths, new_deaths_smoothed, total_cases_per_million, new_cases_per_million, new_cases_smoothed_per_million, total_deaths_per_million, new_deaths_per_million, new_deaths_smoothed_per_million, reproduction_rate,icu_patients, icu_patients_per_million, hosp_patients, hosp_patients_per_million, weekly_icu_admissions, weekly_icu_admissions_per_million, weekly_hosp_admissions, total_cases, new_tests, total_tests, total_tests_per_thousand, new_tests_per_thousand, new_tests_smoothed, new_tests_smoothed_per_thousand, positive_rate, tests_per_case, tests_units, total_vaccinations, people_vaccinated, people_fully_vaccinated, new_vaccinations, new_vaccinations_smoothed, people_vaccinated_per_hundred, people_fully_vaccinated_per_hundred, new_vaccinations_smoothed_per_million, stringency_index, population, population_density,  median_age, aged_65_older, aged_70_older, gdp_per_capita, extreme_poverty, cardiovasc_death_rate, diabetes_prevalence, female_smokers, male_smokers, handwashing_facilities, hospital_beds_per_thousand, life_expectancy, human_development_index
 
 Essa base possui bastante informação relevante para o estudo proposto, entretanto as informações estão a nível de continente, ou seja, cada variável representa o somatório correspondente a território nacional. Como o objetivo dessa etapa do projeto é encontrar variáveis que possam ser utilizadas em algoritmos supervisionados para tentar determinar perfis de indivíduos que deveriam ser priorizados na atual etapa de vacinação contra COVID-19, concluiu-se que esta base a nível nacional não seria utilizada para os fins desse projeto.
 
 #### 2. Coronavirus (COVID-19) - Brazil Dataset
 
+Esta base de dados é composta pelos 5 arquivos .csv listados a seguir:
 
-
+1. **brazil_cities_coordinates.csv**: este arquivo contém as variáveis `state_code, city_code, city_name, lat, long e capital`. Estas variáveis com dados geográficos foram avaliadas como não necessárias para os fins do trablaho. Portanto este arquivo não será utilizado no projeto.
+2. **brazil_covid19.csv**: este arquivo contém as variáveis `data, region, state, cases e deaths`. Nessa base temos as informaçõe de casos e mortes por COVID-19 apresentadas como um somatório por estado. Como explicado anteriormente para a base OWID Coronavirus-data, não conseguimos utilizar essas variáveis como entrada para nossos algoritmos supervisionados para realizar predições por indivíduos. Portanto este arquivo não será utilizado no projeto.
+3. **brazil_covid19_cities.csv**: este arquivo possui as variáveis `date, state, name, code, cases e deaths`. Nessa base temos as informações apresentadas como um somatório por estado e cidade. Pelo mesmo motivo explicado anteriormente, este arquivo não será utilizado no projeto.
+4. **brazil_covid19_macro.csv**: este arquivo possui as variáveis `date, country, week, cases, deaths, recovered e monitoring`. Nessa base temos as informações apresentadas como um somatório do país. Pelo mesmo motivo explicado anteriormente, este arquivo não será utilizado no projeto.
+5. **brazil_population_2019.csv**: este arquivo possui as variáveis `region, state, city, state_code, city_code, health_region_code, health_region e population`. Após avaliação desse arquivo, chegamos a conclusão de que a única variável útil para os finsd o projeto seria a `population`, entretanto esse dado já está presente em outra base que será utilizada. Portanto este arquivo não será utilizado no projeto.
 
 ### Bases Estudadas e Adotadas
 
