@@ -6,23 +6,25 @@
 |
 ├── notebooks                        <- Jupyter notebooks
 │   |__centralizando_bases.ipynb
-└── media                            <- mídias usadas e/ou produzidas no projeto
-    |__ pitch.mov                    <- vídeo de apresentação inicial do projeto
-    |__ cronograma_v2.png            <- cronograma inicial do projeto
+|
+└── assets                            <- mídias usadas e/ou produzidas no projeto
+    |__ pitch.mov                     <- vídeo de apresentação inicial do projeto
+    |__ cronograma_v2.png             <- cronograma inicial do projeto
 ```
 
 # Projeto `Analisando parâmetros multidimensionais: como direcionar o foco na vacinação prioritária de populações-chave`
-`
+
 # Project `Multi Dimensional parameters analises: how to direct the focus on priority vaccination of key-population`
 
 # Apresentação
+
+O presente projeto foi originado no contexto das atividades da disciplina de pós-graduação [Ciência e Visualização de Dados em Saúde](https://github.com/datasci4health/home), oferecida no primeiro semestre de 2021, na Unicamp.
 
 | Nome  | RA | Especialização |
 | :---: | :-: | :-----------: |
 | Andreza Aparecida dos Santos | 164213  | Computação |
 | Leonardo Marçal  | 225240 | Computação |
 | Lígia Vasconcellos  | 081938 | Estatística |
-| Lucas de Oliveira Fujii | 235599 | Saúde |
 | Mariana Amaral Raposo  | 262866 | Saúde |
 
 # Descrição Resumida do Projeto
@@ -36,11 +38,44 @@ Neste sentido e considerando a necessidade iminente de medidas mais efetivas de 
 
 O poder da vacinação em grupos e regiões prioritárias que mais são afetadas pelas crises sanitárias e econômicas poderão auxiliar na redução da taxa de mortalidade e no equilíbrio do sistema de saúde.
 
+O video disponível neste [link](./media/pitch.mov) trás a apresentação da proposta.
+
 # Perguntas de Pesquisa
 
 * De acordo com parâmetros multidimensionais correlacionados ao COVID-19, quais regiões e públicos-alvo deveriam ser priorizados na campanha de vacinação visando minimizar o efeito da crise sanitária e econômica?
 
-# Bases de Dados
+# Metodologia
+
+Este trabalho tem como finalidade a realização de um estudo com o objetivo de compreender a potencial influência da vacinação aplicada prioritariamente a perfis em condições mais propensas a mortalidade, considerando não apenas como critério a idade do indivíduo a ser imunizado. Para isso, inicialmente será realizada uma análise de dados estatística exploratória correlacionando todas as variáveis encontradas provenientes de múltiplas origens de bases de dados. Esta primeira exploração possibilitará identificar relações de causa e efeito e características do meio em que o indivíduo está inserido, tais como PIB, disponibilidade de leitos, médicos e materiais hospitalares, bem como características sociodemográficas: idade, condições de saúde, gênero, etc.
+
+Após a fase inicial em que teremos um panorama da situação do COVID no Brasil, passaremos a estudar o ponto mais específico do estudo: quais são os perfis de indivíduos que deveriam ser priorizados na vacinação? Para tal, construiremos uma base cuja unidade de análise será indivíduos contaminados ou com suspeita de covid e todas as suas características específicas. A esta base será atribuído um target: morte ou não devido ao covid.
+
+Através desta base, serão aplicados múltiplas técnicas de algoritmos supervisionados, tais como regressão logística, random forest, árvore de decisão, SVM e redes neurais. Ao final destes testes de algoritmos, também se fará necessária a aplicação de um método de clusterização para identificação de perfis similares que poderiam ser utilizados como “grupos de prioridade”.
+
+## Bases de Dados e Evolução
+
+### Bases Estudadas mas Não Adotadas
+
+| Base de Dados  | Endereço na Web | Resumo descritivo |
+| :---: | :-: | :-----------: |
+| 1. OWID Coronavirus-data | https://github.com/owid/covid-19-data/tree/master/public/data  | Resumo base |
+| 2. Coronavirus (COVID-19) - Brazil Dataset | https://www.kaggle.com/unanimad/corona-virus-brazil | Resumo base |
+
+#### 1. OWID Coronavirus-data
+
+#### 2. OWID Coronavirus-data
+
+
+### Bases Estudadas e Adotadas
+
+| Base de Dados  | Endereço na Web | Resumo descritivo |
+| :---: | :-: | :-----------: |
+| Covid Saude Gov | https://covid.saude.gov.br/  | Resumo base |
+| Registro de Ocupação Hospitalar COVID-19  | https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar/resource/f9391f7c-9775-4fac-a3ce-bf384e2674c2?view_id=04f2877a-2ea0-4b59-b630-5c530d8db3f2 | Resumo base |
+| Tabelas por municípios - UTI, respiradores, médicos e enfermeiros | https://agenciadenoticias.ibge.gov.br/agencia-detalhe-de-midia.html?view=mediaibge&catid=2103&id=3702 | Resumo base |
+| PIB  |   | Resumo base |
+| Trabalho informal  |   | Resumo base |
+
 
 A princípio pretendemos utilizar bases de dados públicas e abertas, buscando diversas variáveis como:
 
@@ -64,13 +99,6 @@ Algumas bases de interesse já foram encontradas e estão sendo analisadas, como
 * [Observatório_covid19](https://portal.fiocruz.br/observatorio-covid-19)
 * [Our World in Data](https://ourworldindata.org/coronavirus-data)
 
-# Metodologia
-
-Este trabalho tem como finalidade a realização de um estudo com o objetivo de compreender a potencial influência da vacinação aplicada prioritariamente a perfis em condições mais propensas a mortalidade, considerando não apenas como critério a idade do indivíduo a ser imunizado. Para isso, inicialmente será realizada uma análise de dados estatística exploratória correlacionando todas as variáveis encontradas provenientes de múltiplas origens de bases de dados. Esta primeira exploração possibilitará identificar relações de causa e efeito e características do meio em que o indivíduo está inserido, tais como PIB, disponibilidade de leitos, médicos, materiais hospitalares, bem como características sociodemográficas: idade, condições de saúde, gênero e etc.
-
-Após a fase inicial em que teremos um panorama da situação do COVID no Brasil, passaremos a estudar o ponto mais específico do estudo: quais são os perfis de indivíduos que deveriam ser priorizados na vacinação? Para tal, construiremos uma base cuja unidade de análise será indivíduos contaminados ou com suspeita de covid e todas as suas características específicas. A esta base será atribuído um target: morte ou não devido ao covid.
-
-Através desta base, serão aplicados múltiplas técnicas de algoritmos supervisionados, tais como regressão logística, random forest, árvore de decisão, SVM e redes neurais. Ao final destes testes de algoritmos, também se fará necessária a aplicação de um método de clusterização para identificação de perfis similares que poderiam ser utilizados como “grupos de prioridade”.
 
 # Ferramentas
 
