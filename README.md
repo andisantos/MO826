@@ -103,6 +103,7 @@ Após todo o trabalho de centralização, obtivemos um banco de dados de 1.189.7
 
 Devido ao tamanho final da base de dados e da análise exploratória dos dados ser muito extensa, optamos por fornacê-la através deste [arquivo separado](./assets/analise_exploratoria.pdf) disponível no repositório.
 
+
 # Ferramentas
 
 Com base na visão atual do grupo sobre o projeto, acreditamos que as ferramentas utilizadas serão o python e algumas bibliotecas consagradas para machine learning e análise de dados: Sklearn, Tensorflow, Pandas e etc. Como insumo, utilizaremos múltiplas fontes públicas de informações sobre dados de covid e informações sociodemográficas dos brasileiros.
