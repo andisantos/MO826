@@ -14,7 +14,7 @@
 
 # Projeto `Analisando parâmetros multidimensionais: como direcionar o foco na vacinação prioritária de populações-chave`
 
-# Project `Multi Dimensional parameters analises: how to direct the focus on priority vaccination of key-population`
+# Project `Multi Dimensional parameters analysis: how to direct the focus on priority vaccination of key-population`
 
 # Apresentação
 
@@ -38,11 +38,15 @@ Neste sentido e considerando a necessidade iminente de medidas mais efetivas de 
 
 O poder da vacinação em grupos e regiões prioritárias que mais são afetadas pelas crises sanitárias e econômicas poderão auxiliar na redução da taxa de mortalidade e no equilíbrio do sistema de saúde.
 
-O video disponível neste [link](./media/pitch.mov) trás a apresentação da proposta.
+O video disponível neste [link](./assets/pitch.mov) trás a apresentação da proposta.
 
 # Perguntas de Pesquisa
 
 * De acordo com parâmetros multidimensionais correlacionados ao COVID-19, quais regiões e públicos-alvo deveriam ser priorizados na campanha de vacinação visando minimizar o efeito da crise sanitária e econômica?
+
+> Perguntas de pesquisa (revisadas e atualizadas) que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável. 
+> Se a análise exploratória contribuiu para as perguntas de pesquisa, apresente aqui elementos de análise exploratória que ajudem a responder a questão.
+
 
 # Metodologia
 
@@ -59,21 +63,22 @@ Com o objetivo de obter uma base com variáveis que permitam a resposta da pergu
 ### Bases Estudadas mas Não Adotadas
 
 | Base de Dados  | Endereço na Web | Resumo descritivo |
-| :---: | :-: | :-----------: |
+| :------------: | :-------------: | :---------------: |
 | 1. OWID Coronavirus-data | https://github.com/owid/covid-19-data/tree/master/public/data  | Base com informações sobre o avanço da doença COVID-19 a nível de  país. |
 | 2. Coronavirus (COVID-19) - Brazil Dataset | https://www.kaggle.com/unanimad/corona-virus-brazil | Base com informações sobre o avanço da doença COVID-19 a nível de país, estado e cidade.  |
 
 #### 1. OWID Coronavirus-data
 
-A base apresenta as seguintes variáveis:
+Esta base de dados é composta por arquivos que possuem informações referentes a números relacionadas a COVID-19 por país, como números de casos, mortes, recuperados, quantidade de vacinados, dados gerais da população, entre outros (dados desde 26.02.2020 ate 06.04.2021). A base apresenta as seguintes variáveis:
 
 > iso_code, continent, location, date, weekly_hosp_admissions_per_million, new_cases, new_cases_smoothed, total_deaths, new_deaths, new_deaths_smoothed, total_cases_per_million, new_cases_per_million, new_cases_smoothed_per_million, total_deaths_per_million, new_deaths_per_million, new_deaths_smoothed_per_million, reproduction_rate,icu_patients, icu_patients_per_million, hosp_patients, hosp_patients_per_million, weekly_icu_admissions, weekly_icu_admissions_per_million, weekly_hosp_admissions, total_cases, new_tests, total_tests, total_tests_per_thousand, new_tests_per_thousand, new_tests_smoothed, new_tests_smoothed_per_thousand, positive_rate, tests_per_case, tests_units, total_vaccinations, people_vaccinated, people_fully_vaccinated, new_vaccinations, new_vaccinations_smoothed, people_vaccinated_per_hundred, people_fully_vaccinated_per_hundred, new_vaccinations_smoothed_per_million, stringency_index, population, population_density,  median_age, aged_65_older, aged_70_older, gdp_per_capita, extreme_poverty, cardiovasc_death_rate, diabetes_prevalence, female_smokers, male_smokers, handwashing_facilities, hospital_beds_per_thousand, life_expectancy, human_development_index
 
 Essa base possui bastante informação relevante para o estudo proposto, entretanto as informações estão a nível de continente, ou seja, cada variável representa o somatório correspondente a território nacional. Como o objetivo dessa etapa do projeto é encontrar variáveis que possam ser utilizadas em algoritmos supervisionados para tentar determinar perfis de indivíduos que deveriam ser priorizados na atual etapa de vacinação contra COVID-19, concluiu-se que esta base a nível nacional não seria utilizada para os fins desse projeto.
 
+
 #### 2. Coronavirus (COVID-19) - Brazil Dataset
 
-Esta base de dados é composta pelos 5 arquivos .csv listados a seguir:
+Esta base de dados está organizada em 5 arquivos .csv. Estes arquivos possuem dados organizados como séries temporais (dados acumulativos) e possuem informações referentes aos números de casos, mortes e recuperados da Covid-19 por estado do Brasil. Discriminamos cada arquivo um a seguir:
 
 1. **brazil_cities_coordinates.csv**: este arquivo contém as variáveis `state_code, city_code, city_name, lat, long e capital`. Estas variáveis com dados geográficos foram avaliadas como não necessárias para os fins do trablaho. Portanto este arquivo não será utilizado no projeto.
 2. **brazil_covid19.csv**: este arquivo contém as variáveis `data, region, state, cases e deaths`. Nessa base temos as informaçõe de casos e mortes por COVID-19 apresentadas como um somatório por estado. Como explicado anteriormente para a base OWID Coronavirus-data, não conseguimos utilizar essas variáveis como entrada para nossos algoritmos supervisionados para realizar predições por indivíduos. Portanto este arquivo não será utilizado no projeto.
@@ -81,35 +86,30 @@ Esta base de dados é composta pelos 5 arquivos .csv listados a seguir:
 4. **brazil_covid19_macro.csv**: este arquivo possui as variáveis `date, country, week, cases, deaths, recovered e monitoring`. Nessa base temos as informações apresentadas como um somatório do país. Pelo mesmo motivo explicado anteriormente, este arquivo não será utilizado no projeto.
 5. **brazil_population_2019.csv**: este arquivo possui as variáveis `region, state, city, state_code, city_code, health_region_code, health_region e population`. Após avaliação desse arquivo, chegamos a conclusão de que a única variável útil para os finsd o projeto seria a `population`, entretanto esse dado já está presente em outra base que será utilizada. Portanto este arquivo não será utilizado no projeto.
 
+
 ### Bases Estudadas e Adotadas
 
+Para as bases adotadas neste projeto, realizamos um centralização dos dados em um único arquivo para que as análises das variáveis em relação a nossa variável de resposta pudesse ser feita de forma mais direta. Tivemos um grande desafio inicial para centralizar as bases, devido ao tamanho e alto custo operacional. Foram centralizadas as seguintes bases:
+
 | Base de Dados  | Endereço na Web | Resumo descritivo |
-| :---: | :-: | :-----------: |
-| 1. Covid Saude Gov | https://covid.saude.gov.br/  | Resumo base |
-| 2. Registro de Ocupação Hospitalar COVID-19  | https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar/resource/f9391f7c-9775-4fac-a3ce-bf384e2674c2?view_id=04f2877a-2ea0-4b59-b630-5c530d8db3f2 | Resumo base |
-| 3. Tabelas por municípios - UTI, respiradores, médicos e enfermeiros | https://agenciadenoticias.ibge.gov.br/agencia-detalhe-de-midia.html?view=mediaibge&catid=2103&id=3702 | Resumo base |
-| 4. PIB  |   | Resumo base |
-| 5. Trabalho informal  |   | Resumo base |
+| :------------: | :-------------: | :---------------: |
+| 1. Covid Saude Gov | https://covid.saude.gov.br/  | Base com informações por indivíduos contaminados com COVID-19. |
+| 2. Registro de Ocupação Hospitalar COVID-19  | https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar/resource/f9391f7c-9775-4fac-a3ce-bf384e2674c2?view_id=04f2877a-2ea0-4b59-b630-5c530d8db3f2 | Base com informações de disponibilidade de leitos de UTI e Clínicos.  |
+| 3. Tabelas por municípios - UTI, respiradores, médicos e enfermeiros | https://agenciadenoticias.ibge.gov.br/agencia-detalhe-de-midia.html?view=mediaibge&catid=2103&id=3702 | Base com informações sobre disponibilidade de respiradores, leitos, profissionais médicos e enfermeiros. |
+| 4. PIB  |   | Base com informações de distribuição do PIB pelo território naciaonal. |
+| 5. Trabalho Informal  |   | Base com informações sobre quantidade de trabalhadores informais por município e estado. |
 
+Após todo o trabalho de centralização, obtivemos um banco de dados de 1.189.743 linhas e 194 colunas. Foi realizada uma primeira etapa de retirada de variáveis redundantes, a exemplo de códigos que representam os municípios, nomes e códigos de hospitais e outros, de modo que ao final permaneceram 159 colunas no banco de dados.
 
-Algumas bases de interesse já foram encontradas e estão sendo analisadas, como as abaixo:
-
-* [covid_saude_gov](https://covid.saude.gov.br/)
-* [OpenDataSUS](https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar/resource/f9391f7c-9775-4fac-a3ce-bf384e2674c2?view_id=04f2877a-2ea0-4b59-b630-5c530d8db3f2)
-* [IBGE](https://www.ibge.gov.br/estatisticas/downloads-estatisticas.html)
-* [Agencia IBGE](https://agenciadenoticias.ibge.gov.br/agencia-detalhe-de-midia.html?view=mediaibge&catid=2103&id=3702)
-* [comitecientifico-ne](https://www.comitecientifico-ne.com.br/c4ne/o-c4ne)
-* [Observatório_covid19](https://portal.fiocruz.br/observatorio-covid-19)
-
-
+Devido ao tamanho final da base de dados e da análise exploratória dos dados ser muito extensa, optamos por fornacê-la através de um [arquivo](./assets/Analise Exploratoria.pdf) separado disponível no repositório. 
 
 # Ferramentas
 
-Com base na visão atual do grupo sobre o projeto, acreditamos que as ferramentas utilizadas serão o python e algumas bibliotecas consagradas para machine learning e análise de dados: sklearn, tensor flow, pandas e etc. Como insumo, utilizaremos múltiplas fontes públicas de informações sobre dados de covid e informações sociodemográficas dos brasileiros.
+Com base na visão atual do grupo sobre o projeto, acreditamos que as ferramentas utilizadas serão o python e algumas bibliotecas consagradas para machine learning e análise de dados: Sklearn, Tensorflow, Pandas e etc. Como insumo, utilizaremos múltiplas fontes públicas de informações sobre dados de covid e informações sociodemográficas dos brasileiros.
 
 
 # Cronograma
-![Cronograma de entregas](media/cronograma_v2.png)
+![Cronograma de entregas](./assets/cronograma_v2.png)
 
 # Referências
 
