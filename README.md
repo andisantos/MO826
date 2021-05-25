@@ -2,9 +2,9 @@
 
 ```
 |__ README.md                                <- apresentação do projeto
-│__ README_datasets.md                       <- informações referentes aos dados utilizados no projeto
 |
 |__ data
+|   │__ README_datasets.md                   <- informações referentes aos dados utilizados no projeto
 |   |__ external
 |   |   |__ agencia_ibge_not_resp_med_leito_enf_2019_partial.xlsx
 |   |   |__ ibge_trabalhadores informais_2019.xlsx
