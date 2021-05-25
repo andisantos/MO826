@@ -1,15 +1,19 @@
 # Estrutura de Aqruivos e Pastas
 
 ```
-|__ README.md                        <- apresentação do projeto
-│__ README_datasets.md               <- informações referentes aos dados utilizados no projeto
+|__ README.md                            <- apresentação do projeto
+│__ README_datasets.md                   <- informações referentes aos dados utilizados no projeto
 |
-├── notebooks                        <- Jupyter notebooks
-│   |__centralizando_bases.ipynb
+├── notebooks                            <- Jupyter notebooks
+│   |__ centralizando_bases.ipynb
+|   |__ analise_exploratoria_entrega_2.ipynb
 |
-└── assets                            <- mídias usadas e/ou produzidas no projeto
-    |__ pitch.mov                     <- vídeo de apresentação inicial do projeto
-    |__ cronograma_v2.png             <- cronograma inicial do projeto
+└── assets                               <- mídias usadas e/ou produzidas no projeto
+    |__ pitch.mov                        <- vídeo de apresentação inicial do projeto
+    |__ cronograma_v2.png                <- cronograma inicial do projeto
+    |__ analise_exploratoria.pdf         <- analise exploratória da base de dados utilizada no projeto  
+    |__ dicionario_covid_saude_gov.pdf   <- dicionário de dados referente às variáveis presentes na base INFLUD-05-04-2021.csv
+    
 ```
 
 # Projeto `Analisando parâmetros multidimensionais: como direcionar o foco na vacinação prioritária de populações-chave`
@@ -43,9 +47,6 @@ O video disponível neste [link](./assets/pitch.mov) trás a apresentação da p
 # Perguntas de Pesquisa
 
 * De acordo com parâmetros multidimensionais correlacionados ao COVID-19, quais regiões e públicos-alvo deveriam ser priorizados na campanha de vacinação visando minimizar o efeito da crise sanitária e econômica?
-
-> Perguntas de pesquisa (revisadas e atualizadas) que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável. 
-> Se a análise exploratória contribuiu para as perguntas de pesquisa, apresente aqui elementos de análise exploratória que ajudem a responder a questão.
 
 
 # Metodologia
