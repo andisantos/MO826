@@ -101,7 +101,7 @@ Para as bases adotadas neste projeto, realizamos um centralização dos dados em
 
 Após todo o trabalho de centralização, obtivemos um banco de dados de 1.189.743 linhas e 194 colunas. Foi realizada uma primeira etapa de retirada de variáveis redundantes, a exemplo de códigos que representam os municípios, nomes e códigos de hospitais e outros, de modo que ao final permaneceram 159 colunas no banco de dados.
 
-Devido ao tamanho final da base de dados e da análise exploratória dos dados ser muito extensa, optamos por fornacê-la através de um [arquivo](./assets/analise_exploratoria.pdf) separado disponível no repositório. 
+Devido ao tamanho final da base de dados e da análise exploratória dos dados ser muito extensa, optamos por fornacê-la através deste [arquivo separado](./assets/analise_exploratoria.pdf) disponível no repositório.
 
 # Ferramentas
 
