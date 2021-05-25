@@ -89,7 +89,7 @@ Esta base de dados está organizada em 5 arquivos .csv. Estes arquivos possuem d
 
 ### Bases Estudadas e Adotadas
 
-Para as bases adotadas neste projeto, realizamos um centralização dos dados em um único arquivo para que as análises das variáveis em relação a nossa variável de resposta pudesse ser feita de forma mais direta. Tivemos um grande desafio inicial para centralizar as bases, devido ao tamanho e alto custo operacional. Foram centralizadas as seguintes bases:
+Para as bases adotadas neste projeto, realizamos um centralização dos dados em um único arquivo para que as análises das variáveis em relação a nossa variável de resposta pudesse ser feita de forma mais direta. Foram centralizadas as seguintes bases:
 
 | Base de Dados  | Endereço na Web | Resumo descritivo |
 | :------------: | :-------------: | :---------------: |
@@ -99,7 +99,16 @@ Para as bases adotadas neste projeto, realizamos um centralização dos dados em
 | 4. ibge_PIB_tabelas_completas.xlsx |   | Base com informações de distribuição do PIB pelo território naciaonal. |
 | 5. ibge_trabalhadores_informais.xlsx  |   | Base com informações sobre quantidade de trabalhadores informais por município e estado. |
 
-Após todo o trabalho de centralização, obtivemos um banco de dados de 1.189.743 linhas e 194 colunas. Foi realizada uma primeira etapa de retirada de variáveis redundantes, a exemplo de códigos que representam os municípios, nomes e códigos de hospitais e outros, de modo que ao final permaneceram 159 colunas no banco de dados.
+#### Integração entre Bases 
+
+Devido a nossa enorme quantidade de dados, o processo de integração entre as bases precisou ser feito em duas etapas: (1) integração das bases 2,3,4 e 5, de tamanhos menores em relação a base 1, entre si. (2) integração da base resultante de (2) na base 1.
+
+A primeira integração foi feita utilizando-se como chaves referentes as informações de UF e Município das bases 3, 4 e 5 para gerarmos um arquivo único com todas as informações. Após essa etapa, utilizamos as chaves referentes ao UF, Município e Data de Notificação presentes na base 2 para centralizar todas as variáveis. Após essa etapa, partimos para a integração com a base 1. Tivemos um grande desafio inicial para centralizar estas duas bases, devido ao tamanho e alto custo operacional, que consumiu bastante tempo do projeto em busca de maneiras de processar essa quantidade de dados.
+
+Ao final da centralização, obtivemos um banco de dados de 1.189.743 linhas e 194 colunas. Para facilitar os futuros processamentos e reduzir o custo de memória, simplificamos os dados redundantes, a exemplo de códigos que representam os municípios, nomes e códigos de hospitais e outros, de modo que ao final permaneceram 159 colunas no banco de dados.
+
+
+#### Análise Exploratória
 
 Devido ao tamanho final da base de dados e da análise exploratória dos dados ser muito extensa, optamos por fornacê-la através deste [arquivo separado](./assets/analise_exploratoria.pdf) disponível no repositório.
 
