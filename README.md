@@ -6,8 +6,8 @@
 |
 |__ data
 |   |__ external
-|   |   |__ agencia_ibge_not_resp_med_leito_enf_2019__partial.xlsx
-|   |   |__ ibge_trabalhadores informais_2019_partial.xlsx
+|   |   |__ agencia_ibge_not_resp_med_leito_enf_2019_partial.xlsx
+|   |   |__ ibge_trabalhadores informais_2019.xlsx
 |   |   |__ esus-vepi.LeitoOcupacao_28_04_2021_partial.csv
 |   |
 |   |__ interim
@@ -118,9 +118,9 @@ Para as bases adotadas neste projeto, realizamos um centralização dos dados em
 
 Devido a nossa enorme quantidade de dados, o processo de integração entre as bases precisou ser feito em duas etapas: (1) integração das bases 2,3,4 e 5, de tamanhos menores em relação a base 1, entre si. (2) integração da base resultante de (2) na base 1.
 
-A primeira integração foi feita utilizando-se como chaves as informações de UF e Município das bases 3, 4 e 5 para gerarmos um arquivo único com todas as informações. Após essa etapa, utilizamos as chaves referentes ao UF, Município e Data de Notificação presentes na base 2 para centralizar todas as variáveis. O código referente a estes dois passos da integração está disponível no jupyter notebook denominado [centraliza_bases.ipynb](./notebooks/centraliza_bases.ipynb).
+A primeira integração foi feita utilizando-se como chaves as informações de UF e Município das bases 3, 4 e 5 para gerarmos um arquivo único com todas as informações. Após essa etapa, utilizamos as chaves referentes ao UF, Município e Data de Notificação presentes na base 2 para centralizar todas as variáveis. O código referente a estes dois passos da integração está disponível no jupyter notebook denominado [centraliza_bases.ipynb](./notebooks/centraliza_bases.ipynb). Uma amostraegem da base resultante resultante está presente em [data/interim](./data/interim)
 
-Partimos então, para a integração com a base 1. Tivemos um grande desafio inicial para centralizar estas duas bases, devido ao tamanho e alto custo operacional, que consumiu bastante tempo do projeto em busca de alternativas para processar essa quantidade de dados. Ao final da centralização, também feita através dos dados de UF, Município e Data de Notificação, obtivemos um banco de dados de 1.189.743 linhas e 194 colunas. Para facilitar os futuros processamentos e reduzir o custo de memória, simplificamos os dados redundantes, a exemplo de códigos que representam os municípios, nomes e códigos de hospitais e outros, de modo que ao final permaneceram 159 colunas no banco de dados. Para esse processamento foi utilizado o jupyter notebook denominado [analise_centraliza.ipynb](./notebooks/analise_centraliza.ipynb)
+Partimos então, para a integração com a base 1. Tivemos um grande desafio inicial para centralizar estas duas bases, devido ao tamanho e alto custo operacional, que consumiu bastante tempo do projeto em busca de alternativas para processar essa quantidade de dados. Ao final da centralização, também feita através dos dados de UF, Município e Data de Notificação, obtivemos um banco de dados de 1.189.743 linhas e 194 colunas. Para facilitar os futuros processamentos e reduzir o custo de memória, simplificamos os dados redundantes, a exemplo de códigos que representam os municípios, nomes e códigos de hospitais e outros, de modo que ao final permaneceram 159 colunas no banco de dados. Para esse processamento foi utilizado o jupyter notebook denominado [analise_centraliza.ipynb](./notebooks/analise_centraliza.ipynb). Uma amostraegem da base resultante resultante está presente em [data/processed](./data/processed)
 
 
 #### Análise Exploratória
