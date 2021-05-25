@@ -64,7 +64,7 @@ Com o objetivo de obter uma base com variáveis que permitam a resposta da pergu
 
 | Base de Dados  | Endereço na Web | Resumo descritivo |
 | :------------: | :-------------: | :---------------: |
-| 1. OWID Coronavirus-data | https://github.com/owid/covid-19-data/tree/master/public/data  | Base com informações sobre o avanço da doença COVID-19 a nível de  país. |
+| 1. owid-covid-data.csv | https://github.com/owid/covid-19-data/tree/master/public/data  | Base com informações sobre o avanço da doença COVID-19 a nível de  país. |
 | 2. Coronavirus (COVID-19) - Brazil Dataset | https://www.kaggle.com/unanimad/corona-virus-brazil | Base com informações sobre o avanço da doença COVID-19 a nível de país, estado e cidade.  |
 
 #### 1. OWID Coronavirus-data
@@ -93,15 +93,15 @@ Para as bases adotadas neste projeto, realizamos um centralização dos dados em
 
 | Base de Dados  | Endereço na Web | Resumo descritivo |
 | :------------: | :-------------: | :---------------: |
-| 1. Covid Saude Gov | https://covid.saude.gov.br/  | Base com informações por indivíduos contaminados com COVID-19. |
-| 2. Registro de Ocupação Hospitalar COVID-19  | https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar/resource/f9391f7c-9775-4fac-a3ce-bf384e2674c2?view_id=04f2877a-2ea0-4b59-b630-5c530d8db3f2 | Base com informações de disponibilidade de leitos de UTI e Clínicos.  |
-| 3. Tabelas por municípios - UTI, respiradores, médicos e enfermeiros | https://agenciadenoticias.ibge.gov.br/agencia-detalhe-de-midia.html?view=mediaibge&catid=2103&id=3702 | Base com informações sobre disponibilidade de respiradores, leitos, profissionais médicos e enfermeiros. |
-| 4. PIB  |   | Base com informações de distribuição do PIB pelo território naciaonal. |
-| 5. Trabalho Informal  |   | Base com informações sobre quantidade de trabalhadores informais por município e estado. |
+| 1. INFLUD-05-04-2021.csv | https://covid.saude.gov.br/  | Base com informações por indivíduos contaminados com COVID-19. |
+| 2. esus-vepi.LeitoOcupacao_28_04_2021.csv  | https://opendatasus.saude.gov.br/dataset/registro-de-ocupacao-hospitalar/resource/f9391f7c-9775-4fac-a3ce-bf384e2674c2?view_id=04f2877a-2ea0-4b59-b630-5c530d8db3f2 | Base com informações de disponibilidade de leitos de UTI e Clínicos.  |
+| 3. agencia_ibge_noticias_.xlsx | https://agenciadenoticias.ibge.gov.br/agencia-detalhe-de-midia.html?view=mediaibge&catid=2103&id=3702 | Base com informações sobre disponibilidade de respiradores, leitos, profissionais médicos e enfermeiros. |
+| 4. ibge_PIB_tabelas_completas.xlsx |   | Base com informações de distribuição do PIB pelo território naciaonal. |
+| 5. ibge_trabalhadores_informais.xlsx  |   | Base com informações sobre quantidade de trabalhadores informais por município e estado. |
 
 Após todo o trabalho de centralização, obtivemos um banco de dados de 1.189.743 linhas e 194 colunas. Foi realizada uma primeira etapa de retirada de variáveis redundantes, a exemplo de códigos que representam os municípios, nomes e códigos de hospitais e outros, de modo que ao final permaneceram 159 colunas no banco de dados.
 
-Devido ao tamanho final da base de dados e da análise exploratória dos dados ser muito extensa, optamos por fornacê-la através de um [arquivo](./assets/Analise Exploratoria.pdf) separado disponível no repositório. 
+Devido ao tamanho final da base de dados e da análise exploratória dos dados ser muito extensa, optamos por fornacê-la através de um [arquivo](./assets/analise_exploratoria.pdf) separado disponível no repositório. 
 
 # Ferramentas
 
