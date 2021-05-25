@@ -1,18 +1,31 @@
 # Estrutura de Aqruivos e Pastas
 
 ```
-|__ README.md                            <- apresentação do projeto
-│__ README_datasets.md                   <- informações referentes aos dados utilizados no projeto
+|__ README.md                                <- apresentação do projeto
+│__ README_datasets.md                       <- informações referentes aos dados utilizados no projeto
 |
-├── notebooks                            <- Jupyter notebooks
+|__ data
+|   |__ external
+|   |   |__ agencia_ibge_not_resp_med_leito_enf_2019__partial.xlsx
+|   |   |__ ibge_trabalhadores informais_2019_partial.xlsx
+|   |   |__ esus-vepi.LeitoOcupacao_28_04_2021_partial.csv
+|   |
+|   |__ interim
+|   |   |__ merged_datasets_datasus_ibgenoticias_v5_partial.csv
+|   |
+|   |__ processed
+|       |__ df_final_partial.csv
+|
+├── notebooks                                <- Jupyter notebooks
 │   |__ centralizando_bases.ipynb
 |   |__ analise_exploratoria_entrega_2.ipynb
+|   |__ analise_centraliza.ipynb
 |
-└── assets                               <- mídias usadas e/ou produzidas no projeto
-    |__ pitch.mov                        <- vídeo de apresentação inicial do projeto
-    |__ cronograma_v2.png                <- cronograma inicial do projeto
-    |__ analise_exploratoria.pdf         <- analise exploratória da base de dados utilizada no projeto  
-    |__ dicionario_covid_saude_gov.pdf   <- dicionário de dados referente às variáveis presentes na base INFLUD-05-04-2021.csv
+└── assets                                   <- mídias usadas e/ou produzidas no projeto
+    |__ pitch.mov                            <- vídeo de apresentação inicial do projeto
+    |__ cronograma_v2.png                    <- cronograma inicial do projeto
+    |__ analise_exploratoria.pdf             <- analise exploratória da base de dados utilizada no projeto
+    |__ dicionario_covid_saude_gov.pdf       <- dicionário de dados referente às variáveis presentes na base INFLUD-05-04-2021.csv
     
 ```
 
@@ -107,12 +120,12 @@ Devido a nossa enorme quantidade de dados, o processo de integração entre as b
 
 A primeira integração foi feita utilizando-se como chaves as informações de UF e Município das bases 3, 4 e 5 para gerarmos um arquivo único com todas as informações. Após essa etapa, utilizamos as chaves referentes ao UF, Município e Data de Notificação presentes na base 2 para centralizar todas as variáveis. O código referente a estes dois passos da integração está disponível no jupyter notebook denominado [centraliza_bases.ipynb](./notebooks/centraliza_bases.ipynb).
 
-Partimos então, para a integração com a base 1. Tivemos um grande desafio inicial para centralizar estas duas bases, devido ao tamanho e alto custo operacional, que consumiu bastante tempo do projeto em busca de alternativas para processar essa quantidade de dados. Ao final da centralização, também feita através dos dados de UF, Município e Data de Notificação, obtivemos um banco de dados de 1.189.743 linhas e 194 colunas. Para facilitar os futuros processamentos e reduzir o custo de memória, simplificamos os dados redundantes, a exemplo de códigos que representam os municípios, nomes e códigos de hospitais e outros, de modo que ao final permaneceram 159 colunas no banco de dados. Para o processamento foi utilizado o jupyter notebook denominado [analise_centraliza.ipynb](./notebooks/analise_centraliza.ipynb)
+Partimos então, para a integração com a base 1. Tivemos um grande desafio inicial para centralizar estas duas bases, devido ao tamanho e alto custo operacional, que consumiu bastante tempo do projeto em busca de alternativas para processar essa quantidade de dados. Ao final da centralização, também feita através dos dados de UF, Município e Data de Notificação, obtivemos um banco de dados de 1.189.743 linhas e 194 colunas. Para facilitar os futuros processamentos e reduzir o custo de memória, simplificamos os dados redundantes, a exemplo de códigos que representam os municípios, nomes e códigos de hospitais e outros, de modo que ao final permaneceram 159 colunas no banco de dados. Para esse processamento foi utilizado o jupyter notebook denominado [analise_centraliza.ipynb](./notebooks/analise_centraliza.ipynb)
 
 
 #### Análise Exploratória
 
-Devido ao tamanho final da base de dados e da análise exploratória dos dados ser muito extensa, optamos por fornacê-la através deste [arquivo separado](./assets/analise_exploratoria.pdf) disponível no repositório. Esse processamento está documentado no jupyter notebook denominado [analise_exploratoria_entrega_2.ipynb](./notebooks/analise_exploratoria_entrega_2.ipynb)
+Devido ao tamanho final da base de dados e da análise exploratória dos dados ser muito extensa, optamos por fornacê-la através deste [arquivo PDF separado](./assets/analise_exploratoria.pdf) disponível no repositório. Esse processamento está documentado no jupyter notebook denominado [analise_exploratoria_entrega_2.ipynb](./notebooks/analise_exploratoria_entrega_2.ipynb)
 
 
 # Ferramentas
