@@ -1,4 +1,4 @@
-# Estrutura de Aqruivos e Pastas
+# Estrutura de Arquivos e Pastas
 
 ```
 |__ README.md                                <- apresentação do projeto
