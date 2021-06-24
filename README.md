@@ -20,13 +20,16 @@
 │   |__ centralizando_bases.ipynb
 |   |__ analise_exploratoria_entrega_2.ipynb
 |   |__ analise_centraliza.ipynb
+|   |__ Tratamento_Variaveis_E_Treinamentos.ipynb
 |
 └── assets                                   <- mídias usadas e/ou produzidas no projeto
-    |__ pitch.mov                            <- vídeo de apresentação inicial do projeto
-    |__ cronograma_v2.png                    <- cronograma inicial do projeto
-    |__ analise_exploratoria.pdf             <- analise exploratória da base de dados utilizada no projeto
-    |__ dicionario_covid_saude_gov.pdf       <- dicionário de dados referente às variáveis presentes na base INFLUD-05-04-2021.csv
-    
+    |__ pitch.mov                            
+    |__ cronograma_v2.png                    
+    |__ analise_exploratoria.pdf      
+    |__ dicionario_covid_saude_gov.pdf
+    |__ apresentacao_projeto.pdf
+    |__ apresentacao_final.pdf
+    |__ video_final.mov
 ```
 
 # Projeto `Analisando parâmetros multidimensionais: como direcionar o foco na vacinação prioritária de populações-chave`
@@ -44,23 +47,45 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 | Lígia Vasconcellos  | 081938 | Estatística |
 | Mariana Amaral Raposo  | 262866 | Saúde |
 
+**Neste arquivo apresentamos de forma muito resumida o projeto e seus resultados. Para o texto completo do relatório produzido por esse trabalho, acesse [aqui](./assets/relatorio_final.pdf).**
+
 # Descrição Resumida do Projeto
 
-O coronavírus 2019 (COVID-19) é causado por um novo coronavírus conhecido como síndrome respiratória aguda grave coronavírus 2 (SARS-CoV-2). A rápida disseminação desse patógeno e o número crescente de casos e óbitos têm levado vários países ao colapso sanitário, hospitalar e econômico.
-O Brasil viveu em março de 2021 o mês mais mortal da pandemia de COVID-19, com 66 mil óbitos registrados e a saturação dos sistemas de saúde públicos e privados. O que destaca a necessidade urgente de medidas efetivas de controle da doença como forma de evitar o avanço descontrolado e a incidência de novos picos.
+A rápida disseminação do novo coronavírus (COVID-19) e o número crescente de casos e óbitos destaca a necessidade urgente de medidas efetivas de controle da doença. O impacto da vacinação em massa trouxe queda nos índices de mortalidade da doença e, consequentemente, reduziu as taxas de ocupação dos hospitais, enfatizando sua importância. No Brasil, o esquema de vacinação contra a COVID-19 do Ministério da Saúde iniciou-se com os grupos prioritários definidos como: idosos, povos indígenas, profissionais de saúde e de serviços essenciais. Entretanto,  sendo  o  Brasil  um  país  de  dimensões  continentais  e  detentor  de  grandes diferenças econômicas e populacionais entre suas regiões, a cada dia verificamos mais desafios na produção e acesso total da população à vacinação da COVID-19. Neste sentido e considerando a necessidade iminente de medidas mais efetivas de minimização da crise sanitária e econômica relativa a pandemia da COVID-19, o presente projeto objetivou analisar parâmetros multidimensionais relacionados à COVID-19, quais regiões e públicos-alvo deveriam ser priorizados na campanha de vacinação. O estudo procurou compreender a potencial influência da vacinação aplicada prioritariamente a perfis em condições mais propensas a mortalidade, considerando não apenas como critério a idade do indivíduo a ser imunizado. Levou-se em consideração o contexto pandêmico vivenciado, realizando um parâmetro com o ano de 2019 como forma de buscar por relações nos dados que possam ser capazes de fornecer uma melhor análise estatística das regiões e levantar possíveis planos de vacinação que poderiam beneficiar, de maneira mais ágil, o controle da pandemia de COVID-19. De forma metodológica, utilizamos o modelo KDD –
+Knowledge Discovery in Databases (KDD). Inicialmente, foi realizada uma análise de dados estatística exploratória correlacionando variáveis, tais como PIB, disponibilidade de leitos, médicos e materiais hospitalares, bem como características sociodemográficas: idade, condições de saúde, gênero, entre outros.
 
-Estudos de eficácia (ZHANG et al., 2021; WU et al., 2021) confirmam o impacto que elas teriam caso aplicadas em massa na população, trazendo uma queda nos índices de mortalidade da doença e, consequentemente, reduzindo as taxas de ocupação dos hospitais, enfatizando sua importância. Atualmente, a campanha de vacinação utilizada segue os moldes determinados pelo PLANO NACIONAL DE OPERACIONALIZAÇÃO DA VACINAÇÃO CONTRA A COVID-19 (Ministério da Saúde, 2021), estudo que analisou os perfis dos casos hospitalizados ou óbitos por Síndrome Aguda Grave (SRAG) por COVID-19 no Brasil até Setembro de 2020. Desta análise, identificou-se que o grupo de maior risco para hospitalização e óbito encontra-se na faixa etária a partir de 45 anos, além de outros grupos mais vulneráveis. Definiu-se, então, o esquema de vacinação da população iniciando-se nesses grupos onde temos os idosos, povos indígenas, profissionais de saúde e de serviços essenciais. Entretanto, por ser um país de dimensões continentais e detentor de grandes diferenças econômicas e populacionais entre suas regiões, a cada dia verificamos mais desafios na produção e acesso total da população à vacinação.
 
-Neste sentido e considerando a necessidade iminente de medidas mais efetivas de minimização da crise sanitária e econômica atual, o presente projeto tem o intuito de analisar parâmetros multidimensionais relacionados ao COVID-19 em cada região do Brasil, buscando por relações nos dados que possam ser capazes de fornecer uma melhor análise estatística das regiões e levantar possíveis planos de vacinação que impactem mais rapidamente no controle da pandemia.
+# Vídeos do Projeto
 
-O poder da vacinação em grupos e regiões prioritárias que mais são afetadas pelas crises sanitárias e econômicas poderão auxiliar na redução da taxa de mortalidade e no equilíbrio do sistema de saúde.
+## Vídeo da Proposta
 
 O video disponível neste [link](./assets/pitch.mov) trás a apresentação da proposta.
+
+## Vídeo da Apresentação Final
+
+O video disponível neste [link](./assets/video_final.mov) trás a apresentação final do projeto.
+
+# Slides do Projeto
+
+## Slides da Proposta
+
+Os slides estão disponíveis neste [link](./assets/apresentacao_projeto.pdf).
+
+## Slides da Apresentação Final
+
+Os slides estão disponíveis neste [link](./assets/apresentacao_final.pdf).
+
+# Introdução e Referências de Teóricos
+
+
 
 # Perguntas de Pesquisa
 
 * De acordo com parâmetros multidimensionais correlacionados ao COVID-19, quais regiões e públicos-alvo deveriam ser priorizados na campanha de vacinação visando minimizar o efeito da crise sanitária e econômica?
 
+# Objetivos do Projeto
+
+O presente projeto tem o intuito de analisar parâmetros multidimensionais relacionados à COVID-19 em cada região do Brasil, buscando por relações nos dados que possam ser capazes de fornecer uma melhor análise estatística das regiões e levantar possíveis planos de vacinação que impactem mais rapidamente no controle da pandemia.
 
 # Metodologia
 
@@ -114,7 +139,7 @@ Para as bases adotadas neste projeto, realizamos um centralização dos dados em
 | 5. ibge_trabalhadores_informais.xlsx  | https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/25066-pesquisa-revela-retrato-inedito-do-mercado-de-trabalho-do-interior-do-pais | Base com informações sobre quantidade de trabalhadores informais por município e estado. |
 
 
-#### Integração entre Bases 
+#### Integração entre Bases
 
 Devido a nossa enorme quantidade de dados, o processo de integração entre as bases precisou ser feito em duas etapas: (1) integração das bases 2,3,4 e 5, de tamanhos menores em relação a base 1, entre si. (2) integração da base resultante de (2) na base 1.
 
@@ -130,8 +155,42 @@ Devido ao tamanho final da base de dados e da análise exploratória dos dados s
 
 # Ferramentas
 
-Com base na visão atual do grupo sobre o projeto, acreditamos que as ferramentas utilizadas serão o python e algumas bibliotecas consagradas para machine learning e análise de dados: Sklearn, Tensorflow, Pandas e etc. Como insumo, utilizaremos múltiplas fontes públicas de informações sobre dados de covid e informações sociodemográficas dos brasileiros.
+Com base na visão atual do grupo sobre o projeto, acreditamos que as ferramentas utilizadas serão o python e algumas bibliotecas consagradas para machine learning e análise de dados: Sklearn, Pandas e etc. Como insumo, utilizaremos múltiplas fontes públicas de informações sobre dados de covid e informações sociodemográficas dos brasileiros.
 
+# Resultados
+
+## Árvore de Decisão
+
+Para esse algoritmo, obtivemos 66,1% de sensibilidade, uma especificidade de 63,67% e acurácia de 62,75%.
+
+## Floresta Aleatória
+
+Esse algoritmo alcançou uma sensibilidade de 65,21%, uma especificidade de 66,27% e acurácia de 66,79%.
+
+## Floresta Aleatória com Otimização
+
+Esse treinamento conseguiu alcançar uma sensibilidade de 70,69%, especificidade de 62,63% e acurácia de 65,68%.
+
+## Regressão Logística
+
+Assim obtemos as métricas desempenho, com uma especificidade de 57,26%, sensibilidade de 54,65% e acurácia de 65,68%.
+
+# Conclusão
+
+No primeiro experimento realizado utilizando Árvore de Decisão, observou-se que, apesar de não obter o melhor desempenho dentre todos os experimentos, esse algoritmo nos proporcionou uma espécie de classificação para as variáveis, atribuindo uma importância para cada uma dentro do modelo. A partir dela, podemos observar que, além do fator idade, é possível combinar outras informações sobre os indivíduos, como a presença de algum fator de risco, alguns fatores sociais e características do sistema de saúde da região de modo a avaliar o risco do óbito do grupo com aquelas características.
+
+Ao avaliarmos o melhor algorítimo treinado, observamos que a Floresta Aleatória obteve o melhor desempenho com 66,79% de acurácia.
+
+Conduzimos um teste final adicional, com uma amostra de cerca de 200 mil indivíduos. Metade deles faleceu e a outra não mediante a contaminação. Ao aplicar o algoritmo treinado, fizemos a ordenação das probabilidades obtidas para essa amostra da maior para menor probabilidade atribuída.
+
+Ao particionar a base em decis, obtivemos um relevante resultado de ordenação e diferenciação da taxa de letalidade das partes escoradas. Partimos do pressuposto de que, caso o algoritmo não estivesse sendo capaz de ordenar minimamente, todas as partes deveriam ter taxas de letalidade próximas a 50%, que era a média da amostra total. Entretanto, o primeiro decil atingiu uma letalidade 79%, enquanto o ultimo de apenas 10%.
+
+Diante dos resultados, chegamos a conclusão de que, apesar das métricas de resultado dos algoritmos não terem sido tão relevantes quando analisadas sem um contexto e diante da dificuldade e impactos econômicos causados pela demora na vacinação, a priorização vacinal aplicada a grupos de características gerais mais propensas ao óbito e não apenas a faixa de idade poderia ser uma medida eficiente na contingência de consequências desastrosas.
+
+# Trabalhos Futuros
+
+O estudo evidenciou alto potencial de identificação de públicos que reúnem características que representam maior probabilidade de letalidade. Não foi possível estressar todas as hipóteses levantadas, e por isso entende-se que, como próximos passos, há oportunidades para inclusão de outras variáveis e do município, não  contemplada nesta versão devido à indisponibilidade de espaço de memória computacional.
+O teste com algoritmos pautados em redes neurais também pode ser pertinente, mediante a vasta multidimensionalidade do conjunto de informações obtidas. Outro ponto que desperta o interesse é a inclusão de casos mais recentes no conjunto de análise, a fim de entender se, após as populações mais idosas terem recebido a vacina, como se comportaram os grupos de indivíduos jovens mas com combinações relevantes de características de risco de letalidade.
 
 # Cronograma
 ![Cronograma de entregas](./assets/cronograma_v2.png)
