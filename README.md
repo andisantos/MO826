@@ -30,11 +30,12 @@
     |__ apresentacao_projeto.pdf
     |__ apresentacao_final.pdf
     |__ video_final.mov
+    |__ relatorio_final.pdf
 ```
 
-# Projeto `Analisando parâmetros multidimensionais: como direcionar o foco na vacinação prioritária de populações-chave`
+# Projeto `Analisando parâmetros multidimensionais: como direcionar o foco na vacinação prioritária de populações-chave?`
 
-# Project `Multi Dimensional parameters analysis: how to direct the focus on priority vaccination of key-population`
+# Project `Analyzing multidimensional parameters: how to direct the focus on priority vaccination of key populations?`
 
 # Apresentação
 
